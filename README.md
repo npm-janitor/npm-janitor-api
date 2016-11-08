@@ -8,6 +8,16 @@ Built with [micro](https://github.com/zeit/micro), deployed on [now](https://zei
 #### Usage
 [`https://npm-janitor-api.now.sh/:username`](https://npm-janitor-api.now.sh/siddharthkp)
 
+#### Contribute
+
+`index.js` is the source file.
+
+Run `npm run build` to build `api.js`
+
+Test your code with `npm test`
+
+
+
 #### License
 
 MIT
