@@ -1,0 +1,34 @@
+{
+  "name": "npm-janitor-api",
+  "version": "1.0.0",
+  "description": "Exposes node-npm-janitor through a HTTP endpoint",
+  "main": "index.js",
+  "scripts": {
+    "build": "async-to-gen index.js > api.js",
+    "start": "micro -p 3001 api.js",
+    "test": "npm run build && ava"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/npm-janitor/npm-janitor-api.git"
+  },
+  "keywords": [
+    "npm-janitor"
+  ],
+  "author": "siddharthkp",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/npm-janitor/npm-janitor-api/issues"
+  },
+  "homepage": "https://github.com/npm-janitor/npm-janitor-api#readme",
+  "dependencies": {
+    "micro": "6.1.0",
+    "npm-janitor": "1.0.1"
+  },
+  "devDependencies": {
+    "async-to-gen": "^1.1.4",
+    "ava": "^0.16.0",
+    "request-promise": "^4.1.1",
+    "test-listen": "^1.0.0"
+  }
+}
